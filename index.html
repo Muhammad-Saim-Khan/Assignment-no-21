@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CH:43-48 -->
+    <h1>CH:43-48</h1>
+    <!-- q1 -->
+    <h1>Q1</h1>
+    <h1><a onclick="alert('Thanks For Clicking Me')" href="#">Click Me!</a></h1>
+
+    <!-- q2 -->
+    <h1>Q2</h1>
+    <img
+      onclick="sam()"
+      width="200px"
+      src="https://img.freepik.com/free-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1708041600&semt=ais"
+      alt=""
+    />
+    <img
+      onclick="sam()"
+      width="200px"
+      src="https://cdn.thewirecutter.com/wp-content/media/2024/03/androidphones-2048px-0793-2x1-1.jpg?auto=webp&quality=75&crop=2:1&width=1024"
+      alt=""
+    />
+    <img
+      onclick="sam()"
+      width="200px"
+      src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkqpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkqpkd-thumb-539768257?$344_344_PNG$"
+      alt=""
+    />
+    <img
+      onclick="sam()"
+      width="200px"
+      src="https://cdn.mos.cms.futurecdn.net/yFVTwgKyQ3uuEf4DRx6imK-1200-80.jpg"
+      alt=""
+    />
+    <img
+      onclick="sam()"
+      width="200px"
+      src="https://m.economictimes.com/thumb/msid-98998778,width-1200,height-1200,resizemode-4,imgsize-119912/6-best-samsung-mobile-phones-under-15000-in-india-2023.jpg"
+      alt=""
+    />
+
+    <!-- q3 -->
+    <h1>Q3</h1>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>Jhone</td>
+          <td>10</td>
+          <td><button onclick="deleteRow(0)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Doe</td>
+          <td>9</td>
+          <td><button onclick="deleteRow(1)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mark</td>
+          <td>10</td>
+          <td><button onclick="deleteRow(2)">Delete</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>James</td>
+          <td>8</td>
+          <td><button onclick="deleteRow(3)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- q4 -->
+    <h1>Q4</h1>
+
+    <img
+      src="https://www.carpixel.net/w/55396424422f736e974935ef8b286446/lamborghini-aventador-svj-wallpaper-hd-80991.jpg"
+      alt=""
+      width="300"
+      height="200"
+      onmouseover="src='https:encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNdouNyVowyS60I82g95dfiGJc5TvaTeFJbPxbWctpXw&s'"
+      onmouseout="src='https:www.carpixel.net/w/55396424422f736e974935ef8b286446/lamborghini-aventador-svj-wallpaper-hd-80991.jpg'"
+    />
+
+    <!-- q5 -->
+    <h1>Q5</h1>
+    <h2>Counter</h2>
+    <p>Counter: <span>0</span></p>
+    <button onclick="increaseCounter()">Increase</button>
+    <button onclick="decreaseCounter()">Decrease</button>
+
+    <!-- CH:43-48 -->
+    <h1>CH:43-48</h1>
+    <!-- q1 -->
+    <h1>Q1</h1>
+
+    <form id="signup-form">
+      <fieldset class="f">
+        <legend><h1>Signup Form</h1></legend>
+
+        <input
+          class="form"
+          id="firstname"
+          required
+          onfocus="this.style.backgroundColor = 'rgb(166, 172, 230)'"
+          onblur="this.style.backgroundColor = 'white'"
+          type="text"
+          placeholder="Firstname"
+        />
+        <br />
+        <br />
+        <input
+          class="form"
+          id="lastname"
+          required
+          onfocus="this.style.backgroundColor = 'rgb(166, 172, 230)'"
+          onblur="this.style.backgroundColor = 'white'"
+          type="text"
+          placeholder="Lastname"
+        />
+        <br />
+        <br />
+        <input
+          class="form"
+          id="email"
+          required
+          onfocus="this.style.backgroundColor = 'rgb(166, 172, 230)'"
+          onblur="this.style.backgroundColor = 'white'"
+          type="email"
+          placeholder="Email"
+        />
+        <br />
+        <br />
+        <input
+          class="form"
+          id="password"
+          required
+          onfocus="this.style.backgroundColor = 'rgb(166, 172, 230)'"
+          onblur="this.style.backgroundColor = 'white'"
+          type="password"
+          placeholder="Password"
+        />
+        <br />
+        <br />
+        <br />
+        <button class="submit" type="submit">Sign up</button>
+      </fieldset>
+    </form>
+    <div id="display-data"></div>
+
+    <!-- q2 -->
+    <h1>Q2</h1>
+    <div class="item">
+      <h2>Item 1</h2>
+      <p>
+        Summary of item 1 details.
+        <span class="details"
+          >Full details of item 1 Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Proin hendrerit, enim eu porttitor convallis, libero
+          libero tempus nulla, vel aliquam dolor magna non quam.</span
+        >
+      </p>
+      <button class="readMoreBtn" onclick="toggleDetails(this)">
+        Read more
+      </button>
+    </div>
+
+    <div class="item">
+      <h2>Item 2</h2>
+      <p>
+        Summary of item 2 details.
+        <span class="details"
+          >Full details of item 2 Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Proin hendrerit, enim eu porttitor convallis, libero
+          libero tempus nulla, vel aliquam dolor magna non quam.</span
+        >
+      </p>
+      <button class="readMoreBtn" onclick="toggleDetails(this)">
+        Read more
+      </button>
+    </div>
+
+    <div class="item">
+      <h2>Item 3</h2>
+      <p>
+        Summary of item 3 details.
+        <span class="details"
+          >Full details of item 3 Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Proin hendrerit, enim eu porttitor convallis, libero
+          libero tempus nulla, vel aliquam dolor magna non quam.</span
+        >
+      </p>
+      <button class="readMoreBtn" onclick="toggleDetails(this)">
+        Read more
+      </button>
+    </div>
+
+    <!-- Q3 -->
+    <h1>Q3</h1>
+    <h2>Student Details</h2>
+
+    <form id="studentForm">
+      <label for="studentNameInput">Name:</label>
+      <input
+        type="text"
+        id="studentNameInput"
+        name="studentNameInput"
+        required
+      /><br /><br />
+      <label for="studentAgeInput">Age:</label>
+      <input
+        type="number"
+        id="studentAgeInput"
+        name="studentAgeInput"
+        required
+      /><br /><br />
+      <button type="submit">Add Student</button>
+    </form>
+
+    <br />
+
+    <table id="studentDataTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Student details will be dynamically added here -->
+      </tbody>
+    </table>
+  </body>
+  <script src="app.js"></script>
+</html>
